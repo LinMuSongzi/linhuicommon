@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lin.httplib" >
+
+
+
+    <application >
+
+
+        <service
+            android:name=".RequestService"
+            android:exported="false"
+            />
+
+    </application>
+
+</manifest>
