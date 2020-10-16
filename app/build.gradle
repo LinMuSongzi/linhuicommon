@@ -2,11 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.1"
     defaultConfig {
         applicationId "com.linhuicommon"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

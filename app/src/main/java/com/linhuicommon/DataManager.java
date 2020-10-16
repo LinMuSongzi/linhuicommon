@@ -8,14 +8,14 @@ class DataManager {
 
     public static void getSimpleConfig() {
         RequestManager requestManger = RequestManager.getInstance();
-        RequestObject requestObject = RequestManager.buildRequestObject(Urls.getgetSimpleConfig(),RequestManager.Method.Get);
+        RequestObject requestObject = RequestManager.buildRequestObject(Urls.getSimpleConfig(),RequestManager.Method.Get);
 //        requestObject.addParameter(null);
         requestManger.handlRequest(requestObject);
     }
 
     public static void upLpadSimpleConfig(String filePath) {
         RequestManager requestManger = RequestManager.getInstance();
-        RequestObject requestObject = RequestManager.buildFileRequestObject(Urls.getgetSimpleConfig(),RequestManager.Method.Post,filePath);
+        RequestObject requestObject = RequestManager.buildFileRequestObject(Urls.getSimpleConfig(),RequestManager.Method.Post,filePath);
 //        requestObject.addParameter(null);
         requestManger.handlRequest(requestObject);
     }

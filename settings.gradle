@@ -1,1 +1,1 @@
-include ':app', ':mylibrary', ':httplib'
+include ':app', ':mylibrary', ':httplib', ':testmodel'
