@@ -24,6 +24,7 @@
         <service
             android:name=".common.BookService"
             android:enabled="true"
+            android:process=":myremote"
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.BookService" />
