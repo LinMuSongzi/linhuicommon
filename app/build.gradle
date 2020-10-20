@@ -4,8 +4,8 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.linhuicommon"
-        minSdkVersion 21
-        targetSdkVersion 23
+        minSdkVersion 20
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

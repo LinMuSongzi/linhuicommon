@@ -7,11 +7,20 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/ida_top"
         android:textSize="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:onClick="startTest"
-        android:layout_centerInParent="true" />
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/id_list_method"
+        android:layout_below="@+id/ida_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 
 </RelativeLayout>
