@@ -22,6 +22,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.zip.ZipEntry;
 
 import androidx.annotation.RequiresApi;
 
@@ -124,6 +125,10 @@ public class RunImp extends BaseRun {
         Field field = mediaFormat.getClass().getDeclaredField("mMap");
         field.setAccessible(true);
         Map<String,Object> objectMap = (Map<String, Object>) field.get(mediaFormat);
+
+//        ZipEntry zipEntry;
+//        zipEntry.
+
 
         for (String s : strings) {
             Log.i(TAG, "printMediaFormat: " + s + ":" + objectMap.get(s));

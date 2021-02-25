@@ -4,14 +4,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <application
+        android:name=".common.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_name"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_name"
         android:supportsRtl="true"
-        android:name=".common.MyApplication"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -24,12 +24,16 @@
         <service
             android:name=".common.BookService"
             android:enabled="true"
-            android:process=":myremote"
-            android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.BookService" />
-        </intent-filter>
+            android:exported="true"
+            android:process=":myremote">
+            <intent-filter>
+                <action android:name="android.intent.action.BookService" />
+            </intent-filter>
         </service>
+        <activity android:name=".common.SceeActivity" android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan"
+            />
+
     </application>
 
 </manifest>

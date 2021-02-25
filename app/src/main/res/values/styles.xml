@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme2" parent="Theme.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!--窗口透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+
+        <!--去掉标题栏-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--全屏-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>

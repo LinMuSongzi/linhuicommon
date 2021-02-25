@@ -17,4 +17,7 @@ interface IBookManager {
 
     boolean deleteIndex(int index);
 
+
+void test2();
+
 }
